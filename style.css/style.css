@@ -1,0 +1,63 @@
+/* .elemento-animado {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    transition: width 6s ease-in , transform 2s;
+
+    transition-timing-function: ease-in;
+    transition-delay: 5s;
+    transition-property: width;
+    transition-duration: 2s;
+}
+
+.elemento-animado:hover {
+    width: 300px;
+    transform: scale(0.2);
+}
+
+.elemento-animado p {
+    color: #ffffff;
+} */
+
+
+
+.elemento-animado {
+    width: 100px;
+    height: 100px;
+    background-color: #8a2be2;
+}
+
+.elemento-animado:hover {
+    animation-name: change-color; /* usando a animação predefinida */
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+}
+/* Definindo o comportamento da animação - configuração dos keyframes*/
+@keyframes change-color {
+    0% {
+        background-color: #8a2be2 ;
+    }
+
+    50% {
+        background-color: #000;
+    }
+
+    75% {
+        background-color: #fff;
+    }
+    100% {
+        background-color: tomato;
+    }
+}
+/* @keyframes change-color {
+    from {
+        background-color: #8a2be2 ;
+    }
+
+    to{
+        background-color: rgb(255, 5, 5);
+    }
+} */
